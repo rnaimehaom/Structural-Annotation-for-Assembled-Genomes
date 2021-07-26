@@ -35,7 +35,7 @@ $ls  </pre>
 
 <h2 id="Second_Point_Header">Downloading the data</h2>
 Besides our RNA-Seq reads, the only other data required for our annotation is the <i>Arabidopsis thaliana</i> reference genome (this does not include the databases installed with the various software used in this tutorial). While the reference genome may be found on the NCBI website, we will be using the un-annotated genome located on Xanadu. You can copy the reference genome to your directory with the following command:
-<pre style="color: silver; background: black;">cp /isg/shared/databases/alignerIndex/plant/Arabidopsis/thaliana/Athaliana_167_TAIR9.fa /$HOME/structural_annotation_for_assembled_genomes_xanadu/athaliana.fa</pre>
+<pre style="color: silver; background: black;">cp /isg/shared/databases/alignerIndex/plant/Arabidopsis/thaliana/Athaliana_167_TAIR9.fa $HOME/structural_annotation_for_assembled_genomes_xanadu/athaliana.fa</pre>
 
 Now, we must download our RNA-Seq using the <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">SRA-toolkit</a>. We will be running this command as a <a href="https://bioinformatics.uconn.edu/resources-and-events/tutorials/xanadu/#Xanadu_6">Slurm scheduler</a> script. For more information, please visit the link provided. To initialize our Slurm script, we use the "nano" command as following:
 
